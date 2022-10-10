@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "basic",
+  "version": "${version}",
+  "name": "Basic",
+  "description": "this is my basic mod",
+  "authors": [
+    "GengYage"
+  ],
+  "contact": {
+    "website": "www.icoderdev.xyz",
+    "repo": "git@github.com:GengYage/isbest.git"
+  },
+  "license": "MIT",
+  "icon": "assets/basic/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.yage.basic.client.BasicClient"
+    ],
+    "main": [
+      "org.yage.basic.Basic"
+    ]
+  },
+  "mixins": [
+    "basic.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
